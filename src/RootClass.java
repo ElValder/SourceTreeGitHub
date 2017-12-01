@@ -1,7 +1,7 @@
 import java.util.Random;
 
 public class RootClass {
-    public static void main(String[]args){
+    public static void main(String[] args) {
         Random s = new Random();
         int N = 5, sumA = 0, sumB = 0;
         int A[] = new int[N];
@@ -21,7 +21,7 @@ public class RootClass {
         float a = (float) sumA / N;
         float b = (float) sumB / N;
         if (a > b) {
-            System.out.println("Среднее арифметическое первого массива больше и равняется " + a);
+            System.out.println("111111111Среднее арифметическое первого массива больше и равняется " + a);
         }
         if (a < b) {
             System.out.println("Среднее арифметическое второго массива больше и равняется " + b);
