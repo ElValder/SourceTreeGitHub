@@ -1,0 +1,53 @@
+From 94a979a11874df67d4dc0b557379a9b6416bebea Mon Sep 17 00:00:00 2001
+From: OLEXIY_KOCHERGA <lyakoff@yahoo.com>
+Date: Fri, 1 Dec 2017 16:28:26 +0200
+Subject: [PATCH] no message
+
+---
+ src/RootClass.java | 34 ++++++++++++++++++++++++++++++++++
+ 1 file changed, 34 insertions(+)
+ create mode 100644 src/RootClass.java
+
+diff --git a/src/RootClass.java b/src/RootClass.java
+new file mode 100644
+index 0000000..8c00d9c
+--- /dev/null
++++ b/src/RootClass.java
+@@ -0,0 +1,34 @@
++import java.util.Random;
++
++public class RootClass {
++    public static void main(String[] args) {
++        Random s = new Random();
++        int N = 5, sumA = 0, sumB = 0;
++        int A[] = new int[N];
++        int B[] = new int[N];
++        for (int i = 0; i < N; i++) {
++            A[i] = s.nextInt(6);
++            System.out.print(A[i] + " ");
++            sumA = sumA + A[i];
++        }
++        System.out.println();
++        for (int i = 0; i < N; i++) {
++            A[i] = s.nextInt(6);
++            System.out.print(A[i] + " ");
++            sumB = sumB + A[i];
++        }
++        System.out.println();
++        float a = (float) sumA / N;
++        float b = (float) sumB / N;
++        if (a > b) {
++            System.out.println("111111111Среднее арифметическое первого массива больше и равняется " + a);
++        }
++        if (a < b) {
++            System.out.println("Среднее арифметическое второго массива больше и равняется " + b);
++        }
++        if (a == b) {
++            System.out.println("Среднее арифметическое массивов равное и равняется " + a);
++        }
++    }
++}
++
+-- 
+2.14.1.windows.1
+
